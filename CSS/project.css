@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    font-family: 'Inter', sans-serif; 
+}
+/* Menu-Bar */
+.sd{
+    box-shadow: 1px 8px 8px rgba(185, 185, 185, 0.59);
+}
+.bd{
+    border-bottom: 1px solid rgba(223, 223, 223, 0.579);
+}
+
+.hv-shop{
+    transition: 0.5s;
+}
+.hv-shop:hover{
+    color: white;
+    text-shadow: 0 0 5px darkorchid,
+                0 0 25px darkorchid,
+                0 0 50px darkorchid,
+                0 0 100px darkorchid;
+}
+.hv:hover{
+    color:darkorchid !important;
+}
+.bt-icon{
+    transition: all .2s;
+}
+.bt-icon:hover{
+    transform: translateY(-3px);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* Colleaction */
+.title h2::before{
+    position: absolute;
+    content: " ";
+    width: 5px;
+    height: 40px;
+    background-color: rgb(236, 125, 202);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#butt{
+    border-radius: 50px;
+    border: 1px solid rgba(81, 81, 81, 0.602);
+}
+#butt:hover{
+    background-color: rgb(246, 57, 158);
+    color: white;
+}
+.colltaion-img span{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(236, 125, 202) ;
+    border-radius: 50%;
+    top: 5%;
+    right: 5%;
+}
+/* Special */
+.Special-img span{
+    top: 5%;
+    right: 10%;
+}
+.Special-img:hover img{
+    transform: scale(1.2);
+}
+.Special-img img{
+    transition: all 0.3;
+}
+/* offer */
+.offer{
+    background-image: url(../Pic/pic-slider2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.offer .height{
+    height: 75vh;
+}
+/* Subscribe */
+.subcribe .circle{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+}
+.subcribe .circle-btn{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: red;
+    color: white;
+}
+.subcribe .circle-btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(112, 111, 111);
+}
+/* media */
+@media(min-width : 992px){
+    .bd{
+        border: none;
+    }
+}
